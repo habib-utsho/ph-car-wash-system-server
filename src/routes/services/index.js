@@ -29,6 +29,10 @@ serviceRouter.get("/", async (req, res) => {
   if (queries.branch) {
     find.branch = queries.branch;
   }
+  if (queries.name) {
+    find.name = queries.name;
+  }
+
   console.log(find, "find");
 
   const services = await servicesCollection.find(find).toArray();
