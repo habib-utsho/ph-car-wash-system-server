@@ -19,7 +19,7 @@ export async function connectDB() {
 
 export const usersCollection = db.collection("user");
 export const servicesCollection = db.collection("services");
-export const bookingCollection = db.collection("booking");
+export const bookingCollection = db.collection("bookings");
 
 export async function closeDB() {
   await client.close();
